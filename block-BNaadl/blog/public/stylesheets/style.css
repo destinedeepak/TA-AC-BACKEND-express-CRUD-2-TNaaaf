@@ -143,6 +143,9 @@ h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
+.center {
+  text-align: center;
+}
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -184,6 +187,10 @@ h1 {
 }
 
 /* form  */
+.form-sec {
+  box-shadow: 1px 1px 10px 1px grey;
+  padding: 2rem;
+}
 .btn {
   margin: 1rem auto;
   background-color: aquamarine;
@@ -224,4 +231,50 @@ h1 {
   width: 95.7%;
   text-align: center;
   display: block;
+}
+/* article details  */
+.details-sec {
+  box-shadow: 1px 1px 10px 0px grey;
+  padding-top: 0;
+}
+.titleAndAuthor {
+  background: rgb(156, 156, 156);
+  padding: 1rem;  
+}
+.name {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.details {
+ 
+  padding: 1rem;
+}
+.tag {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: .2rem;
+  color: rgb(18, 156, 110);
+}
+.likes-dislikes {
+  margin-top: 1rem;
+}
+.icon {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #909090;
+}
+.likes-dislikes span {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  color: #424242;
+}
+.btn-secondary {
+  margin-top: 1rem;
+  width: 3rem;
+}
+/* edit  */
+.btn-primary {
+  margin-left: 15.5rem;
+  display: inline-block;
 }

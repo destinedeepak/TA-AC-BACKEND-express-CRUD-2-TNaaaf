@@ -15,7 +15,7 @@
       <section class="articles">
         <%articles.forEach(ele=>{%>
         <div class="each-article">
-          <a href="/users/<%=ele.id%>" class="article-anchor"><%=ele.title%></a>
+          <a href="/articles/<%=ele.id%>" class="article-anchor"><%=ele.title%></a>
         </div>
         <%})%>
         <a href="/articles/new" class="btn btn-create">Add Article</a>
