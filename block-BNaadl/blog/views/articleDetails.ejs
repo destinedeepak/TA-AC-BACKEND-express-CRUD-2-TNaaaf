@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/d95544a3bc.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+   <main>
+       <section class="container details-sec">
+           <div class="titleAndAuthor center">
+               <h1 class="name"><%=article.title%></h1>
+               <h3 class="author"><span>By  </span>Deepak Singh</h3>
+           </div>
+           <div class="details">
+               <h3><%=article.description%></h3>
+               <%article.tags.forEach((ele,i,arr)=>{%>
+                   <a href="#" class="tag"><%=ele%></a>
+                   <%if(i!==arr.length-1){%>
+                       <small>,</small>
+                   <%}%>
+               <%})%>
+               <div class="likes-dislikes">
+                   <a href="/articles/<%=article.id%>/like" class="icon"><i class="fas fa-thumbs-up"></i></a>
+                   <span><%=article.likes%></span>
+                   <a href="/articles/<%=article.id%>/dislike" class="icon"><i class="fas fa-thumbs-down"></i></a>
+                   <span><%=article.dislikes%></span>
+               </div>
+               <div class="edit-delete">
+                <a href="/articles/<%=article.id%>/edit" class="btn btn-secondary">Edit</a>
+                <a href="/articles/<%=article.id%>/delete" class="btn btn-secondary">Delete</a>
+               </div>
+           </div>
+       </section>
+   </main>
+</body>
+</html>
