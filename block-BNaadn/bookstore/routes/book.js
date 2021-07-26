@@ -55,7 +55,7 @@ router.get('/sortbyauthor',(req, res, next) => {
 })
 
 // GET books sort by category homepage
-router.get('/sortbycategory',(req, res, next) => {
+router.get('/sortbycategory',( req, res, next) => {
   Book.find((err, books) =>{
     let categories = books.map(ele=> ele.category)
     let uniqCategories = lodash.uniq(categories);
